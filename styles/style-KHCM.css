@@ -1,0 +1,392 @@
+/*	Arquivo .css utilizado exclusivamente para a página do jogo Kingdom Hearts Re:Chain of Memories,
+devido somente à mudança de tamanho da imagem nos artigos.	*/
+
+/*	Fonte usada na página	*/
+@font-face {
+    font-family: geosanslight;
+    src: url('../fonts/GeosansLight.ttf');
+}
+
+/*	Resetando margeamento	*/
+html {
+	position:relative; 
+	min-height: 100%;
+	margin: 0; 
+	padding: 0;
+}
+
+/*	Definindo a fonte no sistema, resetando o margeamento e implementando uma imagem como backgound	*/
+body{
+	font-size: 19px;
+	font-family: geosanslight;
+	background-image: url("../images/soraback.jpg");
+	background-size: 1600.8px 1008px;
+	background-attachment: fixed;
+	margin: 0;
+	padding: 0;
+}
+
+/*	Propriedades do cabeçalho	*/
+header {
+	text-align: center;
+	color: #fff;
+	border-bottom-style: solid;
+	border-bottom-width: 3px;
+	border-color: #fff;
+	background-image: url("../images/khpattern.jpg");
+	background-size: 50%;
+	
+}
+
+/*	Propriedades do título do cabeçalho	*/
+header h1 {
+	margin: 0;
+	padding:1.7%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/*	Propriedades da seção onde estão os artigos	*/
+section {
+	clear: left;
+	margin-bottom: 0;
+	text-align: center;
+	
+}
+
+/*	Propriedades dos artigos, sendo cada um uma Keyblade	*/
+article {
+	padding: 0;
+	display: inline-block;
+	width: 26.7%;
+	height: 600px;
+	overflow: auto;
+	margin: 1.8%;
+	color: #fff;
+	border-style:solid;
+	border-width: 2px;
+	border-color:#fff;
+	border-radius: 8px;
+	background-image: url("../images/khpatternblank6.png");
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/*	Propriedades do título dos artigos	*/
+article h1 {
+	font-size: 2em;
+}
+
+/*	Propriedades dos parágrafos dos artigos	*/
+article p {
+	text-align: justify;
+	padding: 15px;
+}
+
+/*	Tamanho das imagens dos artigos	*/
+article > img {
+	width: 30%;
+}
+
+/*	Propriedades do conteúdo do dropdown, para a seleção de Keyblades	*/
+li {
+	display: block;
+    color: #000;
+    text-align: center;
+    padding: 6% 6%;
+    transition-duration: 0.2s;
+    text-decoration: none;	
+	border-radius: 8px;	
+}
+
+/*	Mudando o background quando o cursor estive em cima	*/
+li:hover {
+	background-color: #181818;	
+}
+
+/*	Propriedades do rodapé	*/
+footer {	
+	text-align: center;
+	background-image: url("../images/khpatternblank.png");
+	background-size: 50%;	
+	color: #fff;
+	border-top-style: solid;
+	border-top-width: 3px;
+}
+
+/*	Propriedades do texto do rodapé	*/
+footer h4 {
+	margin: 0;	
+	padding:5px;
+	border-color: #fff;
+}
+footer a {
+	display: block;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;	
+	margin:0;
+	padding: 0;
+}
+
+/*	Classe da div onde está o conteúdo	*/
+.conteudo {
+	margin-bottom: 40px;
+}
+
+
+/*	Classe da div onde está o rodapé	*/
+.footer {
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height:37px;
+}
+
+/*	Classe das Keyblades que aparecem no rodapé	*/
+.key {
+	display: block;
+    color: #fff;  
+    text-align: center;    
+    padding: 5%;
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+
+/*	Classe do botão que retorna à Home	*/
+.pag {
+	display: block;
+    color: #fff;
+    float: right;
+    margin-right: 35px;
+    text-align: center;
+    padding: 10px;
+	border-style:solid;
+	border-color:#fff;
+	border-width: 2px;
+	border-radius: 8px; 
+	background-image: url("../images/khpatternblank.png");
+    background-size: 100%;
+	z-index: 1;
+	text-decoration: none;	
+    transition-duration: 0.2s;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);				
+}
+
+/*	Mudanças quando o cursor está sobre essa classe	*/
+.pag:hover {
+	background-image: url("../images/khpatternblank2.png");
+}
+
+/*	Classe do botão que sobe a tela a qualquer momento	*/
+.pagup {
+	display: inline-block;
+    color: #fff;
+    position: fixed;
+    opacity: 0.6;
+    right: 0;
+    top: 570px;
+    margin-right: 35px;
+    text-align: center;
+    padding: 10px 10px;
+	border-style:solid;
+	border-color:#fff;
+	border-width: 2px;
+	border-radius: 8px; 
+	background-image: url("../images/khpatternblank.png");
+    background-size: 100%;
+	z-index: 1;
+	text-decoration: none;	
+    transition-duration: 0.2s;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);				
+}
+
+/*	Mudanças quando o cursor está sobre essa classe	*/
+.pagup:hover {
+	background-image: url("../images/khpatternblank2.png");
+	opacity: 1;
+}
+
+/*	Classe da div onde está o botão para mostrar as Keyblades e o conteúdo, ou seja, o dropbtn e 
+dropdown-content	*/
+.dropdown {
+	display: inline-block;
+	border-radius: 10px;
+	color: #fff;
+	transition-duration: 0.4s;
+}
+
+/*	Mudanças quando o cursor está sobre essa classe	*/
+.dropbtn:hover {
+	background-image: url("../images/khpatternblank2.png");
+}
+
+/*	Mudanças quando o cursor está sobre essa classe referente à segunda		*/
+.dropdown:hover .dropbtn {
+	background-image: url("../images/khpatternblank2.png");
+}
+
+/*	Mudanças quando o cursor está sobre essa classe referente à segunda		*/
+.dropdown:hover .dropdown-content {
+    display: grid;
+  	grid-template-columns: 24% 24% 24% 24% ; 
+  	grid-gap: 1%; 
+}
+
+/*	Classe da div onde está o botão para mostrar as Keyblades	*/
+.dropbtn {
+	display: inline-block;
+    color: #fff;
+    background-image: url("../images/khpatternblank.png");
+    background-size: 100%;
+    text-align: center;
+    padding: 10px 10px;
+	border-style:solid;
+	border-color:#fff;
+	border-width: 2px;
+	border-radius: 8px; 
+    text-decoration: none;	
+    transition-duration: 0.2s;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);				
+}
+
+
+/*	Classe da div onde está o conteúdo do botão de mostrar as Keyblades	*/
+.dropdown-content {
+    display: none;
+    float: left;
+    max-width: 100%;
+    background-image: url("../images/khpatternblank6.png");
+    position: absolute;   
+	border-style:solid;
+	border-color:#fff;
+	border-width: 2px;
+	border-radius: 8px;
+	transition-duration: 0.2s;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/*	Mudanças quando os artigos estiverem em foco	*/
+#a:target{
+	background-image: url("../images/khpatternblank.png");
+}
+		
+#b:target{
+	background-image: url("../images/khpatternblank.png");
+}
+
+#c:target{
+	background-image: url("../images/khpatternblank.png");
+}
+
+#d:target{
+	background-image: url("../images/khpatternblank.png");
+}
+
+#e:target{
+	background-image: url("../images/khpatternblank.png");
+}
+
+#f:target{
+	background-image: url("../images/khpatternblank.png");
+}
+
+#g:target{
+	background-image: url("../images/khpatternblank.png");
+}
+
+#h:target{
+	background-image: url("../images/khpatternblank.png");
+}
+
+#i:target{
+	background-image: url("../images/khpatternblank.png");
+}
+
+#j:target{
+	background-image: url("../images/khpatternblank.png");
+}
+
+#k:target{
+	background-image: url("../images/khpatternblank.png");
+}
+
+#l:target{
+	background-image: url("../images/khpatternblank.png");
+}
+
+#m:target{
+	background-image: url("../images/khpatternblank.png");
+}
+
+#n:target{
+	background-image: url("../images/khpatternblank.png");
+}
+
+#o:target{
+	background-image: url("../images/khpatternblank.png");
+}
+
+#p:target{
+	background-image: url("../images/khpatternblank.png");
+}
+
+#q:target{
+	background-image: url("../images/khpatternblank.png");
+}
+
+#r:target{
+	background-image: url("../images/khpatternblank.png");
+}
+
+#s:target{
+	background-image: url("../images/khpatternblank.png");
+}
+
+#t:target{
+	background-image: url("../images/khpatternblank.png");
+}
+
+#u:target{
+	background-image: url("../images/khpatternblank.png");
+}
+
+#v:target{
+	background-image: url("../images/khpatternblank.png");
+}
+
+#w:target{
+	background-image: url("../images/khpatternblank.png");
+}
+
+#x:target{
+	background-image: url("../images/khpatternblank.png");
+}
+
+#y:target{
+	background-image: url("../images/khpatternblank.png");
+}
+
+#z:target{
+	background-image: url("../images/khpatternblank.png");
+}
+
+/*	Quando o a tela tiver tal largura, mudar algumas coisas	*/
+@media screen and (max-width: 1000px) {
+	article {
+		width: 40.05%;
+	}	
+}
+
+@media screen and (max-width: 571px) {
+	article {
+		width: 80.1%;
+	}	
+}
+
+@media screen and (max-width: 550px) {
+	.dropdown:hover .dropdown-content {
+	    display: grid;
+	  	grid-template-columns: 32% 32% 32%; 
+	  	grid-gap: 1%; 
+	}
+}

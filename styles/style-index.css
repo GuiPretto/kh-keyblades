@@ -1,0 +1,209 @@
+/*	Arquivo .css utilizado para a página principal do bestiário.	*/
+
+/*	Fonte usada na página	*/
+@font-face {
+    font-family: geosanslight;
+    src: url('../fonts/GeosansLight.ttf');
+}
+
+/*	Resetando margeamento	*/
+html {
+	position:relative; 
+  	min-height: 100%;
+  	margin: 0; 
+  	padding: 0;
+}
+
+/*	Definindo a fonte no sistema, resetando o margeamento e implementando uma imagem como backgound	*/
+body {
+	font-family: geosanslight;
+	font-size: 18px;
+	background-image: url("../images/soraback.jpg");
+	background-size: 1600.8px 1008px;
+	background-attachment: fixed;
+	margin: 0;
+	height: 100%;
+	padding: 0;
+}
+
+/*	Propriedades da opção de jogo	*/
+a {
+	display: block;
+    color: #fff;
+    text-align: center;
+    padding: 4% 10% 4% 10%;
+    border-radius: 6px;
+    text-decoration: none;
+    transition-duration: 0.2s;		
+}
+
+/*	Mudando o background quando o cursor estive em cima	*/
+a:hover {
+	background-color: #1e1e1e;
+}
+
+
+/*	Propriedades do cabeçalho	*/
+header {	
+	text-align: center;
+	padding: 0;
+	background-image: url("../images/khpattern.jpg");
+	background-size: 50%;	
+	color: #fff;
+	border-bottom-style: solid;
+	border-bottom-width: 3px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/*	Propriedades do título do cabeçalho	*/
+header h1 {
+	margin: 0;
+	padding:0.5%;
+	border-color: #fff;
+}
+
+/*	Propriedades das opções do cabeçalho	*/
+header a {
+	border-style: solid solid none solid;
+	border-width: 3px;
+	background-color: #1e1e1e;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	margin: 0;
+	padding: 0.5%;
+	color: white;
+	display: inline-block;
+}
+
+/*	Mudando o background quando o cursor estive em cima	*/
+header a:hover {
+	background-color: #323232;
+}
+
+/*	Propriedades do rodapé	*/
+footer {	
+	text-align: center;
+	background-image: url("../images/khpatternblank.png");
+	background-size: 50%;	
+	color: #fff;
+	border-top-style: solid;
+	border-top-width: 3px;	
+}
+
+/*	Propriedades do texto do rodapé	*/
+footer h4 {
+	margin: 0;	
+	padding:5px;
+	border-color: #fff;
+}
+footer a {
+	margin:0;
+	padding: 0;
+}
+
+/*	Classe da div onde está o conteúdo	*/
+.conteudo {
+	margin-bottom: 40px;
+}
+
+/*	Classe da div onde está o rodapé	*/
+.footer {
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height:38px;
+}
+
+/*	Classe da div onde está o botão para mostrar os jogos e o conteúdo, ou seja, o dropbtn e 
+dropdown-content	*/
+.dropdown {
+	display: inline-block;
+	margin:0;
+	padding:0;
+	transition-duration: 0.2s;
+}
+
+/*	Mudanças quando o cursor está sobre essa classe referente à segunda		*/
+.dropdown:hover .dropbtn {
+    box-shadow: 0px 1px 16px 0px rgba(0,0,0,0.2);
+}
+
+/*	Mudanças quando o cursor está sobre essa classe referente à segunda		*/
+.dropbtn:hover + .dropdown-content {
+    display: inline-block;  
+}
+
+/*	Mudanças quando o cursor está sobre essa classe	*/
+.dropdown-content:hover {
+	display: inline-block;
+}
+
+/*	Classe da div onde está o botão para mostrar os jogos	*/
+.dropbtn {
+	display: inline-block;
+    color: #fff;
+    margin-top: 5%;
+    margin-left: 20%;   
+    padding: 3% 8% 3% 8%;
+    text-align: center;
+	background-image: url("../images/khpatternblank.png");
+	background-size: 100%;
+	border-style:solid;
+	border-color:#fff;
+	border-radius: 8px; 
+    text-decoration: none;
+    transition-duration: 0.2s;	
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);				
+}
+
+/*	Classe da div onde está o conteúdo do botão de mostrar os jogos	*/
+.dropdown-content {
+	margin-left: 20%; 
+	margin-right: 0;
+	display: none;
+    background-image: url("../images/khpatternblank.png");
+	background-size: 200%;
+	margin-bottom:60px;
+	border-size:1px;
+	border-style:solid;
+	border-color:#fff;
+	border-radius: 8px;
+	transition-duration: 0.2s;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/*	Classe da div que divide a tela em dois	*/
+.metade {
+	width: 49%;	
+	float: left;
+	padding:0;
+}
+
+/*	Classe da imagem do jogo	*/
+.capa {
+	height: auto;
+	display: inline-block;
+	border-style:solid;
+	border-color:black;
+	border-radius: 8px; 
+	background-color: #FDFFDA;
+	z-index: 1;
+	text-decoration: none;	
+	position: fixed;
+	padding: 0;
+	top: 18%;
+	left: 55%;
+    transition-duration: 0s;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);				
+}
+
+/*	ID usada para mostrar e não mostarar a capa do jogo selecionado	*/
+#capa {
+	visibility: visible;			
+}
+
+/*	ID da opção ativa no cabeçãlho	*/
+#um {
+	background-color: #7e7d7b;
+}

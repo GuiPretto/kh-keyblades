@@ -1,0 +1,143 @@
+/*	Arquivo .css utilizado para a página Sobre.	*/
+
+/*	Fonte usada na página	*/
+@font-face {
+    font-family: geosanslight;
+    src: url('../fonts/GeosansLight.ttf');
+}
+
+/*	Resetando margeamento	*/
+html {
+	position:relative; 
+    min-height: 100%;
+    margin: 0; 
+    padding: 0;
+}
+
+/*	Definindo a fonte no sistema, resetando o margeamento e implementando uma imagem como backgound	*/
+body {
+	font-family: geosanslight;
+	font-size: 18px;
+	background-image: url("../images/soraback.jpg");
+	background-size: 1600.8px 1008px;
+	background-attachment: fixed;
+	margin: 0;
+	padding: 0;
+}
+
+/*	Propriedades dos parágrafos	*/
+p {
+	margin-left:15%;
+	margin-right:15%;
+	margin-bottom: 4%;
+}
+
+/*	Propriedades dos tipos de texto h2	*/
+h2 {
+	margin-top: 5%;
+	margin-left:5%;
+	margin-right:4%;
+}
+
+/*	Propriedades do cabeçalho	*/
+header {	
+	text-align: center;
+	padding: 0;
+	background-image: url("../images/khpattern.jpg");
+	background-size: 50%;	
+	color: #fff;
+	border-bottom-style: solid;
+	border-bottom-width: 3px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/*	Propriedades do título do cabeçalho	*/
+header h1 {
+	margin: 0;	
+	padding:0.5%;
+	border-color: #fff;
+}
+
+/*	Propriedades das opções do cabeçalho	*/
+header a {
+	border-style: solid solid none solid;
+	border-width: 3px;
+	border-radius: 6px;
+	background-color: #1e1e1e;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	text-decoration: none;
+	margin: 0;
+	padding: 0.5%;
+	color: #fff;
+	display: inline-block;
+	text-decoration: none;
+}
+
+/*	Mudando o background quando o cursor estive em cima	*/
+header a:hover {
+	background-color: #323232;
+}
+
+/*	Propriedades do rodapé	*/
+footer {	
+	text-align: center;
+	background-image: url("../images/khpatternblank.png");
+	background-size: 50%;	
+	color: #fff;
+	border-top-style: solid;
+	border-top-width: 3px;
+	
+}
+
+/*	Propriedades do texto do rodapé	*/
+footer h4 {
+	margin: 0;	
+	padding:5px;
+	border-color: #fff;
+}
+footer a {
+	display: block;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;	
+	margin:0;
+	padding: 0;
+}
+
+/*	Classe da div onde está o conteúdo	*/
+.conteudo {
+	margin-bottom: 40px;
+}
+
+/*	Classe da div onde está o rodapé	*/
+.footer {
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height:37px;
+}
+
+/*	Classe da div onde está o conteúdo da página	*/
+.normal {
+	margin-top: 5%;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 8%;
+	text-align: center;
+	color: #fff;
+	border-style:solid;
+	text-align: center;
+	border-width: 2px;
+	border-color:#fff;
+	border-radius: 8px;
+	background-image: url("../images/khpatternblank.png");
+	background-size: 100%;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/*	ID da opção ativa no cabeçãlho	*/
+#dois {
+	background-color: #7e7d7b;
+}
